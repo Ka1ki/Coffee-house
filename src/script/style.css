@@ -1,0 +1,522 @@
+@import url("https://fonts.googleapis.com/css?family=Nova+Flat");
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#canvas {
+  max-width: 998px;
+  border: 0.1px solid #ddd;
+  margin: 15px auto;
+  padding: 35px 35px 0px;
+}
+
+#mobileNav {
+  display: none;
+}
+
+#mobileNavBar {
+  height: 0px;
+  overflow: hidden;
+  transition: height 1s;
+}
+
+#mobileNav a {
+  font-family: "Nova Flat", cursive;
+  font-size: 18px;
+  line-height: 1.7em;
+  text-transform: uppercase;
+  color: #818181;
+  text-decoration: none;
+}
+
+.mainMobileNav {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-row-gap: 8px;
+  padding-left: 0px;
+}
+
+.mainMobileNav li {
+  display: inherit;
+  text-align: center;
+}
+
+#mobileMenuLink {
+  text-align: center;
+}
+
+#logo {
+  width: 152.18px;
+  height: 154.29px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.address-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 1.5em;
+  font-family: "Nova Flat", cursive;
+  font-size: 14px;
+  line-height: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #949494;
+  text-align: center;
+}
+
+.site-address {
+  text-align: left;
+}
+
+.city-address {
+  text-align: right;
+}
+
+#topNav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  text-align: center;
+  margin: 0px;
+}
+
+.tophr {
+  color: #818181;
+  margin-top: 40px;
+  max-width: 600px;
+}
+
+.bottomhr {
+  color: #818181;
+  margin-bottom: 50px;
+  max-width: 950px;
+}
+
+#topNav ul li {
+  display: inline-block;
+  font-family: "Nova Flat", cursive;
+  font-size: 15px;
+  line-height: 1.7em;
+  text-transform: uppercase;
+}
+
+#topNav ul li a {
+  text-decoration: none;
+  color: #818181;
+  cursor: pointer;
+}
+
+#topNav ul li a:hover:not(.active-link) {
+  animation-name: menuBorder;
+  animation-duration: 0.05s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.active-link {
+  border-bottom: 2px solid lightgrey;
+}
+
+@keyframes menuBorder {
+  0% {
+    border-bottom: 2px solid lightgrey;
+    padding-bottom: 7px;
+  }
+
+  50% {
+    border-bottom: 2px solid lightgrey;
+    padding-bottom: 3px;
+  }
+
+  100% {
+    border-bottom: 2px solid lightgrey;
+  }
+}
+
+.slide-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+.mainSlideImage01 {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: none;
+  animation-name: fader;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+}
+.mainSlideImage02 {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: none;
+  animation-name: fader;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fader {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.aroxbit {
+  font-family: "Nova Flat", cursive;
+  font-size: 10px;
+  line-height: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #949494;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.aroxbit a {
+  color: skyblue;
+  text-decoration: none;
+}
+/****************Landing Page CSS complete!**************/
+
+.mail-container {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 16px;
+  line-height: 1.1em;
+  color: #949494;
+}
+
+.mail-container p {
+  font-family: "Nova Flat", cursive;
+  font-size: 16px;
+  line-height: 1.1em;
+  color: #949494;
+  text-align: justify;
+  margin-right: 10px;
+  padding-bottom: 30px;
+}
+
+.name-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  padding: 0px 1px;
+  margin-bottom: 30px;
+}
+
+input {
+  font-family: sans-serif;
+  color: #000;
+  background-color: #fafafa;
+  padding: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input:focus {
+  background-color: #fff;
+}
+
+textarea {
+  font-family: sans-serif;
+  color: #000;
+  background-color: #fafafa;
+  padding: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+  height: 100px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+textarea:focus {
+  background-color: #fff;
+}
+
+#submitButton {
+  font-size: 17px;
+  text-transform: uppercase;
+  font-family: "Valera Round", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-style: normal;
+  background-color: transparent;
+  color: #272727;
+  border: 1.5px solid #272727;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#submitButton:hover {
+  background-color: #272727;
+  color: #fff;
+  transition: 0.2s;
+}
+/***************************************************/
+
+/****************Drink Menu and Food Menu********************/
+
+.menu-container {
+  padding: 50px;
+  padding-top: 0px;
+  padding-bottom: 17px;
+}
+
+.menu-container h1 {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: normal;
+  color: #6c7a89;
+  font-size: 30px;
+}
+
+.menu-container p {
+  font-family: "Nova Flat", cursive;
+  font-size: 16px;
+  line-height: 1.1em;
+  color: #949494;
+  text-align: justify;
+  margin-right: 10px;
+  padding-bottom: 30px;
+}
+
+.drinkMenuList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5em;
+}
+
+.drinkMenuList h6 {
+  font-family: "Nova Flat", cursive;
+  font-size: 16px;
+  color: #000;
+  text-align: justify;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+
+.drinkMenuList p {
+  font-family: "Nova Flat", cursive;
+  font-size: 14px;
+  line-height: 1.35em;
+  color: #949494;
+  text-align: left;
+}
+
+.foodMenuList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5em;
+}
+
+.foodMenuList h6 {
+  font-family: "Nova Flat", cursive;
+  font-size: 16px;
+  color: #000;
+  text-align: justify;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.foodMenu-slider {
+  display: flex;
+	overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.foodMenu-slider > img {
+  flex-shrink: 0;
+  height: 300px;
+}
+
+/* Custom scrollbar-below */
+#scrollbar-custom::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#scrollbar-custom::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+	height: 5px;
+}
+
+#scrollbar-custom::-webkit-scrollbar-thumb
+{
+	border-radius: 12px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+
+
+/****************About section starts here****************/
+
+.about-section {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  font-family: "Nova Flat", cursive;
+}
+
+.about-section p {
+  font-size: 14px;
+  line-height: 1.35em;
+  color: #949494;
+  text-align: left;
+}
+
+.about-section h6 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.about-section hr {
+  border: 1px solid #e6e6e6;
+  width: 80%;
+  margin-top: 50px;
+}
+
+.about-section img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.about-section div {
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/*****CONTACT SECTION BEGINS HERE******/
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #949494;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-container p {
+  font-size: 16px;
+}
+
+.contact-container img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/***********Responsive Media queries*****************/
+@media (max-width: 1090px) {
+  #canvas {
+    margin: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .slide-image {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 20px;
+  }
+
+  #canvas {
+    border: none;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+  }
+
+  .drinkMenuList {
+    display: grid;
+    column-gap: 50px;
+  }
+  .foodMenuList {
+    display: grid;
+    column-gap: 50px;
+  }
+}
+
+@media (max-width: 555px) {
+  .drinkMenuList {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 0px;
+    grid-template-rows: 1fr;
+  }
+
+  .foodMenuList {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 0px;
+    grid-template-rows: 1fr;
+	}
+	.foodMenu-slider > img {
+		height: 270px;
+	}
+}
+
+@media (max-width: 480px) {
+  .address-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 4px;
+    margin-bottom: 20px;
+  }
+
+  .site-address {
+    text-align: center;
+  }
+
+  .city-address {
+    text-align: center;
+  }
+
+  #topNav {
+    display: none;
+  }
+
+  #mobileNav {
+    display: block;
+	}
+	
+	.foodMenu-slider > img {
+		height: 200px;
+	}
+
+  .mail-container {
+    padding-top: 17px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}

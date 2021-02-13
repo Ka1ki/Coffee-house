@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coffee House | Feel the class</title>
+    <link rel="stylesheet" href="./src/script/style.css">
+  </head>
+
+<body>
+  <div id="canvas">
+    <header>
+      <div id="mobileNav">
+          <nav id="mobileNavBar">
+            <ul class="mainMobileNav">
+              <li><a href="./index.html">Main</a></li>
+              <li><a href="./mailingList.html">Mailing List</a></li>
+              <li><a href="./DrinkMenu.html">Drink Menu</a></li>
+              <li><a href="./FoodMenu.html">Food Menu</a></li>
+              <li><a href="./About.html">About</a></li>
+              <li><a href="./Contact.html">Contact</a></li>
+            </ul>
+            <hr/>
+          </nav>
+        <div id="mobileMenuLink">
+          <a>Menu</a>
+        </div>
+        <hr class="bottomhr"/>
+
+      </div>
+      <div class="logo-container">
+        <img id="logo" src="./src/images/logo.jpg">
+      </div>
+
+      <div class="address-container">
+        <div class="site-address">2/163, Vivek khand-2</div>
+        <div class="landmark-address">Gomti Nagar Station</div>
+        <div class="city-address">226010, Lucknow</div>
+      </div>
+
+      <nav id="topNav">
+        <hr class="tophr"/>
+        <ul>
+          <li><a href="./index.html">Main</a></li>
+          <li><a class="active-link" href="./mailingList.html">Mailing List</a></li>
+          <li><a href="./DrinkMenu.html">Drink Menu</a></li>
+          <li><a href="./FoodMenu.html">Food Menu</a></li>
+          <li><a href="./About.html">About</a></li>
+          <li><a href="./Contact.html">Contact</a></li>
+        </ul>
+        <hr class="bottomhr"/>
+      </nav>
+    </header>
+
+    <main class="mail-container">
+     <p>Thank you for your interest in Homey's Cafe. To be included in on our events and to find out more, you can sign up here for our mailing list.</p>
+
+     <form class="form-container">
+      <label>Name*</label>
+      <div class="name-grid">
+        <div>
+          <input type="text" id="firstName" name="firstname"><br/>
+          <label>First Name</label>
+        </div>
+
+        <div>
+          <input type="text" id="lastName" name="firstname"><br/>
+          <label>Last Name</label>
+        </div>
+      </div>
+
+      <label>Email Address*</label>
+      <input type="text" id="email" name="email" style="margin-bottom: 30px;">
+
+      <label  style="margin-bottom: 30px;">Additional Notes:</label>
+      <textarea type="text" id="addNote"></textarea>
+
+      <button id="submitButton">Submit</button>
+     </form>
+    </main>
+
+    <br/><br/>
+    <hr/>
+
+    <footer>
+      <div class="aroxbit"><p>Powered by <a href="https://aroxbit.com">Aroxbit</a></p></div>
+    </footer>
+  </div>
+</body>
+<script src="./src/script/main.js"></script>
+</html>

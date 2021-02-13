@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coffee House | Feel the class</title>
+    <link rel="stylesheet" href="./src/script/style.css" />
+  </head>
+
+  <body>
+    <div id="canvas">
+      <header>
+        <div id="mobileNav">
+          <nav id="mobileNavBar">
+            <ul class="mainMobileNav">
+              <li><a href="./index.html">Main</a></li>
+              <li><a href="./mailingList.html">Mailing List</a></li>
+              <li><a href="./DrinkMenu.html">Drink Menu</a></li>
+              <li><a href="./FoodMenu.html">Food Menu</a></li>
+              <li><a href="./About.html">About</a></li>
+              <li><a href="./Contact.html">Contact</a></li>
+            </ul>
+            <hr />
+          </nav>
+          <div id="mobileMenuLink">
+            <a>Menu</a>
+          </div>
+          <hr class="bottomhr" />
+        </div>
+        <div class="logo-container">
+          <img id="logo" src="./src/images/logo.jpg" />
+        </div>
+
+        <div class="address-container">
+          <div class="site-address">2/163, Vivek khand-2</div>
+          <div class="landmark-address">Gomti Nagar Station</div>
+          <div class="city-address">226010, Lucknow</div>
+        </div>
+
+        <nav id="topNav">
+          <hr class="tophr" />
+          <ul>
+            <li><a href="./index.html">Main</a></li>
+            <li><a href="./mailingList.html">Mailing List</a></li>
+            <li><a href="./DrinkMenu.html">Drink Menu</a></li>
+            <li><a href="./FoodMenu.html">Food Menu</a></li>
+            <li><a href="./About.html">About</a></li>
+            <li><a class="active-link" href="./Contact.html">Contact</a></li>
+          </ul>
+          <hr class="bottomhr" />
+        </nav>
+      </header>
+
+      <main class="contact-container">
+        <div>
+          <p>
+            Stop by in person during our regular business hours, or email us any
+            time!
+          </p>
+
+          <ul>
+            <li>Mon - Fri 6:00am - 11:00pm</li>
+            <li>Sat - Sun 6:00am - 11:00pm</li>
+          </ul>
+
+          <form class="form-container">
+            <label>Name*</label>
+            <div class="name-grid">
+              <div>
+                <input type="text" id="firstName" name="firstname" /><br />
+                <label>First Name</label>
+              </div>
+
+              <div>
+                <input type="text" id="lastName" name="firstname" /><br />
+                <label>Last Name</label>
+              </div>
+            </div>
+
+            <label>Email Address*</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              style="margin-bottom: 30px;"
+            />
+
+            <label style="margin-bottom: 30px;">Additional Notes:</label>
+            <textarea type="text" id="addNote"></textarea>
+
+            <button id="submitButton">Submit</button>
+          </form>
+          <img src="./src/images/contact-img.jpg" />
+        </div>
+
+        <div style="text-align: center;font-size: 22px;margin-left: 50px;">
+          <!-- Put a map here of Homey's Cafe -->
+          Google Map location of your cafe here
+        </div>
+      </main>
+
+      <br /><br />
+      <hr />
+
+      <footer>
+        <div class="aroxbit">
+          <p>Powered by <a href="https://aroxbit.com">Aroxbit</a></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="./src/script/main.js"></script>
+</html>
